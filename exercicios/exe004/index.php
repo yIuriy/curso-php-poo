@@ -11,14 +11,17 @@
     <pre>
 <?php 
 require_once "ContaBanco.php"; 
-$contaJoao = new ContaBanco;
-$contaJoao -> criarConta(01,"João","Corrente",500);
-print_r($contaJoao);
-$contaJoao -> pagarMensalidade(true);
-$contaJoao -> sacarValor(11);
+//criarConta(num,nome,tipo,saldo);
+$pessoa1 = new ContaBanco;
+$pessoa2 = new ContaBanco;
+$pessoa1 -> criarConta(1111,"Jubileu","Corrente",300);
+$pessoa2 -> criarConta(2222,"Creuza","Poupança",500);
+$pessoa2 -> sacarValor(650);
+$pessoa1 -> pagarMensalidade(true);
+$pessoa2 -> fecharConta(2222);
 
-
-print_r($contaJoao);
+print_r($pessoa1);
+print_r($pessoa2);
 ?>
 
 </pre>

@@ -80,10 +80,10 @@ class ContaBanco
             if ($valorSacado <= $this->saldo) {
                 $this->saldo -= $valorSacado;
             } else {
-                if ($pedirDinheiro) {
+                if (!$pedirDinheiro) {
                     echo "Saldo Insuficiente!<br>";
                 } else {
-                    echo "Você decidiu ultrapassar seu limite e está devendo para o banco!<br>";
+                    echo $this->getDonoDaConta() . " decidiu ultrapassar seu limite e está devendo para o banco!<br>";
                     $this->saldo -= $valorSacado;
                 }
             }
@@ -108,7 +108,7 @@ class ContaBanco
                 $valorMensalidade = 12;
             } else {
                 $valorMensalidade = 20;
-            } 
+            }
             if ($isPago == true && $this->saldo > $valorMensalidade) {
                 echo "Você pagou a mensalidade de R$$valorMensalidade;<br>";
                 $this->saldo -= 50;
@@ -140,7 +140,7 @@ class ContaBanco
             } else if ($this->saldo < 0) {
                 echo "Seu saldo é R$" . $this->saldo . ", pague seu débito para poder encerrar sua conta!<br>";
             } else {
-                echo "Conta de número " . $this->numeroConta . " fechado<br>";
+                echo "Conta de número " . $this->numeroConta . " fechado<br>.";
                 $this->statusDaConta = false;
                 $this->resetarConta();
             }
