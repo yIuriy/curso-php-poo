@@ -1,5 +1,5 @@
 <?php
-class Caneta
+class Caneta2
 {
     public $modelo;
     public  $cor;
