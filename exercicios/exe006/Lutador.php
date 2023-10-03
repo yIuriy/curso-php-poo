@@ -146,6 +146,7 @@ class Lutador
     //Métodos 
     public function apresentar()
     {
+        echo "<br>----------------------------<br>";
         echo "<p>Nome: " . $this->getNome() . "</p>";
         echo "<p>Nacionalidade: " . $this->getNacionalidade() . "</p>";
         echo "<p>Idade: " . $this->getIdade() . "</p>";
