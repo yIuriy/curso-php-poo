@@ -12,7 +12,7 @@
 
     <div class="container bg-white mt-5 rounded">
         <h1 class="text-center">Ultra Emoji Combate</h1>
-        <pre>
+        <pre class="text-wrap">
             <?php
             require_once "Lutador.php";
             require_once "Luta.php";
