@@ -12,7 +12,7 @@
 
     <div class="container bg-white mt-5 rounded">
         <h1 class="text-center">Herança em PHP</h1>
-        <pre class="text-wrap">
+        <pre class="">
             <?php
             require_once "Pessoa1.php";
             require_once  "Aluno.php";
@@ -31,7 +31,11 @@
             $pessoa2->setCurso("Informática");
             $pessoa3->setSalario(2500.75);
             $pessoa4->setSetor("Estoque");
-         
+
+            print_r($pessoa1);
+            print_r($pessoa2);
+            print_r($pessoa3);
+            print_r($pessoa4);
 
             ?>
         </pre>

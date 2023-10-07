@@ -1,5 +1,5 @@
 <?php
-require_once "Pessoa.php";
+require_once "Pessoa1.php";
 
 class Professor extends Pessoa1
 {

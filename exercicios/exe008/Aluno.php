@@ -32,7 +32,8 @@ class Aluno extends Pessoa1
 
    public function cancelarMatricula(){
     if($this->getMatricula()){
-        $this->setMatricula(false);
+        echo "<p>Matrícula será cancelada!</p>";
+		$this->setMatricula(false);
     }else{
         echo "<p>Não está matriculado!</p>";
     }
