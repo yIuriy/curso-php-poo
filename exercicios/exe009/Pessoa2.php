@@ -1,11 +1,11 @@
 <?php
 abstract class Pessoa2
 {
-    private $nome;
+    protected $nome;
 
-    private $idade;
+    protected $idade;
 
-    private $sexo;
+    protected $sexo;
 
     // Métodos Especiais
 
@@ -42,7 +42,7 @@ abstract class Pessoa2
         return $this;
     }
 
-    final public function fazerAniversario()
+    public final function fazerAniversario()
     {
         $this->setIdade($this->getIdade() + 1);
     }
