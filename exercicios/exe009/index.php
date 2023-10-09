@@ -14,9 +14,9 @@
         <h1 class="text-center">Herança Parte(2)</h1>
         <pre class="">
             <?php
-            require_once "Visitante2.php";
-            require_once "Aluno2.php";
-            require_once "Bolsista2.php";
+            require_once "class/Visitante2.php";
+            require_once "class/Aluno2.php";
+            require_once "class/Bolsista2.php";
             
 
 
